@@ -6,8 +6,10 @@
     "angular-resource": "^1.4.7",
     "angular-route": "^1.4.7",
     "express": "^4.13.3",
+    "faker": "^3.0.1",
     "http-server": "^0.8.5",
     "live-server": "^0.8.2",
+    "lodash": "^3.10.1",
     "protractor": "^2.5.1"
   },
   "scripts": {
