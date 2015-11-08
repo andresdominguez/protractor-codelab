@@ -8,5 +8,8 @@
     "http-server": "^0.8.5",
     "live-server": "^0.8.2",
     "protractor": "^2.5.1"
+  },
+  "scripts": {
+    "install": "node ./node_modules/.bin/webdriver-manager update"
   }
 }
