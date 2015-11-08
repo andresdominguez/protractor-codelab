@@ -2,5 +2,10 @@
   "name": "protractor-codelab",
   "version": "1.0.0",
   "dependencies": {
+    "angular": "^1.4.7",
+    "angular-resource": "^1.4.7",
+    "angular-router": "0.0.2",
+    "http-server": "^0.8.5",
+    "protractor": "^2.5.1"
   }
 }
