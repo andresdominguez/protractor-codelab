@@ -4,8 +4,9 @@
   "dependencies": {
     "angular": "^1.4.7",
     "angular-resource": "^1.4.7",
-    "angular-router": "0.0.2",
+    "angular-route": "^1.4.7",
     "http-server": "^0.8.5",
+    "live-server": "^0.8.2",
     "protractor": "^2.5.1"
   }
 }
