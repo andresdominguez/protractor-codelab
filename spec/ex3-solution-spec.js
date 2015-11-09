@@ -8,7 +8,6 @@ describe('Exercise 3', function() {
 
   beforeEach(function() {
     userList.get();
-
   });
 
   it('should add user', function() {
