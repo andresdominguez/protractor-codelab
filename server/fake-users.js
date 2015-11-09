@@ -6,8 +6,7 @@ var _ = require('lodash');
  * @return {Array<{
  *   name: string,
  *   email: string,
- *   phone: string,
- *   company: string
+ *   phone: string
  * }>}
  */
 var getUsers = function() {
@@ -15,8 +14,7 @@ var getUsers = function() {
     return {
       name: faker.name.findName(),
       email: faker.internet.email(),
-      phone: faker.phone.phoneNumber(),
-      company: faker.company.companyName()
+      phone: faker.phone.phoneNumber()
     }
   })
 };

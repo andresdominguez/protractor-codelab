@@ -3,6 +3,7 @@ var express = require('express');
 var fakeUsers = require('./server/fake-users');
 
 var app = express();
+var TIMEOUT = 1000;
 
 // Serve all the angular files under testapp
 app.use(
@@ -15,23 +16,25 @@ var start = function() {
   var persistentUsers = fakeUsers.getUsers();
 
   app.get('/users', function(req, res) {
-    res.send({list: fakeUsers.getUsers()});
+    setTimeout(function() {
+      res.send({list: fakeUsers.getUsers()});
+    }, TIMEOUT);
   });
 
   app.get('/persistent/list', function(req, res) {
-    res.send({list: persistentUsers});
-  });
-
-  app.get('/persistent/list', function(req, res) {
-    res.send({list: persistentUsers});
+    setTimeout(function() {
+      res.send({list: persistentUsers});
+    }, TIMEOUT);
   });
 
   app.post('/persistent/add', function(req, res) {
-    if (!req.body || !req.body.user) {
-      res.sendStatus(400);
-    }
-    persistentUsers.push(req.body.user);
-    res.sendStatus(200);
+    setTimeout(function() {
+      if (!req.body || !req.body.user) {
+        res.sendStatus(400);
+      }
+      persistentUsers.push(req.body.user);
+      res.sendStatus(200);
+    }, TIMEOUT);
   });
 
   var server = app.listen(9000, function() {
