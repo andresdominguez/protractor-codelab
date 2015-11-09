@@ -11,7 +11,7 @@ var start = function() {
       express.static(__dirname));
 
   app.get('/users', function(req, res) {
-    res.send(fakeUsers.getUsers());
+    res.send({list: fakeUsers.getUsers()});
   });
 
   var server = app.listen(9000, function() {

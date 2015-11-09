@@ -1,0 +1,29 @@
+<h1>Exercise 2</h1>
+
+<h4>List of users</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Company</th>
+      <th>City</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr ng-if="!ctrl.userList.length" class="success">
+    <td colspan="6" class="text-center">Loading...</td>
+  </tr>
+    <tr ng-repeat="row in ctrl.userList">
+      <td ng-bind="row.name"></td>
+      <td ng-bind="row.email"></td>
+      <td ng-bind="row.phone"></td>
+      <td ng-bind="row.company"></td>
+      <td ng-bind="row.city"></td>
+      <td ng-bind="row.country"></td>
+    </tr>
+  </tbody>
+</table>

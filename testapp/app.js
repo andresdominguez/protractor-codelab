@@ -34,7 +34,7 @@
     };
   });
 
-  app.controller('Exercise1Ctrl', function(userService) {
+  app.controller('Exercise1Ctrl', function() {
     var vm = this;
 
     vm.user = {
@@ -47,5 +47,14 @@
       vm.displayUser = angular.copy(vm.user);
     };
     vm.updateData();
+  });
+
+  app.controller('Exercise2Ctrl', function(userService) {
+    var vm = this;
+
+    vm.userList = [];
+    userService.users.get({}, function(response) {
+      vm.userList = response.list;
+    });
   });
 })();
