@@ -2,12 +2,7 @@
 
 <h4>List of users</h4>
 
-
-<div ng-if="!ctrl.userList.length">
-  <div class="progress">
-    <div class="indeterminate"></div>
-  </div>
-</div>
+<loading-bar ng-if="!ctrl.userList.length"></loading-bar>
 
 <table ng-if="ctrl.userList.length">
   <thead>

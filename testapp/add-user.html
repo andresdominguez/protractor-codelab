@@ -3,18 +3,25 @@
 <form>
   <div>
     <label for="name">Name</label>
-    <input type="text" id="name" ng-model="ctrl.user.name"/>
+    <input type="text" id="name" autocomplete="off"
+        ng-model="ctrl.user.name"/>
   </div>
   <div>
     <label for="email">Email</label>
-    <input type="text" id="email" ng-model="ctrl.user.email"/>
+    <input type="text" id="email" autocomplete="off"
+        ng-model="ctrl.user.email"/>
   </div>
   <div>
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" ng-model="ctrl.user.phone"/>
+    <input type="tel" id="phone" autocomplete="off"
+        ng-model="ctrl.user.phone"/>
   </div>
 
-  <button ng-click="ctrl.save()"
-      class="btn blue darken-4">Save
-  </button>
+  <div ng-if="!ctrl.isSaving">
+    <button ng-click="ctrl.save()"
+        class="btn blue darken-4">
+      Save
+    </button>
+  </div>
+  <loading-bar ng-if="ctrl.isSaving"></loading-bar>
 </form>

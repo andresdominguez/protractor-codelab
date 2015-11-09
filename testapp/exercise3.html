@@ -6,11 +6,7 @@
   <a class="btn blue darken-4" href="#/addUser">Add user</a>
 </div>
 
-<div ng-if="!ctrl.userList.length">
-  <div class="progress">
-    <div class="indeterminate blue darken-4"></div>
-  </div>
-</div>
+<loading-bar ng-if="!ctrl.userList.length"></loading-bar>
 
 <table ng-if="ctrl.userList.length">
   <thead>
