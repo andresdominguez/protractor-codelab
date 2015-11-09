@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Protractor codelab</title>
+  <link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.css">
 </head>
 <body>
 
-<div ng-controller="Exercise1Ctrl as c">
-  {{c.name}}
+<nav>
+  <div class="nav-wrapper blue darken-4">
+    <ul>
+      <li><a href="#/exercise1">Exercise 1</a></li>
+      <li><a href="#/exercise2">Exercise 2</a></li>
+      <li><a href="#/exercise3">Exercise 3</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div ng-view></div>
 </div>
 
 <script src="../node_modules/angular/angular.min.js"></script>
 <script src="../node_modules/angular-resource/angular-resource.min.js"></script>
 <script src="../node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

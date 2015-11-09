@@ -1,0 +1,31 @@
+<h1>Exercise 1</h1>
+
+<h4>Contact info</h4>
+
+<div>
+  <div>
+    <strong>Name:</strong> <span ng-bind="ctrl.displayUser.name"></span>
+  </div>
+  <div id="contact-email"><strong>Email:</strong> {{ctrl.displayUser.email}}</div>
+  <div><strong>Phone:</strong> {{ctrl.displayUser.phone}}</div>
+</div>
+
+<h4>Update info</h4>
+
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" ng-model="ctrl.user.name"/>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" ng-model="ctrl.user.email"/>
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" ng-model="ctrl.user.phone"/>
+  </div>
+  <button ng-click="ctrl.updateData()"
+      class="waves-effect waves-light btn blue darken-4">Save
+  </button>
+</form>
