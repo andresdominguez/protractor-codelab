@@ -20,7 +20,7 @@
       controller: 'Exercise3Ctrl',
       controllerAs: 'ctrl'
     }).when('/addUser', {
-      templateUrl: 'addUser.html',
+      templateUrl: 'add-user.html',
       controller: 'AddUserCtrl',
       controllerAs: 'ctrl'
     }).otherwise({

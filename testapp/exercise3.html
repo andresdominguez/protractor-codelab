@@ -1,0 +1,33 @@
+<h1>Exercise 3</h1>
+
+<h4>User management</h4>
+
+<div>
+  <a class="btn blue darken-4" href="#/addUser">Add user</a>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Company</th>
+      <th>City</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr ng-if="!ctrl.userList.length" class="success">
+    <td colspan="6" class="text-center">Loading...</td>
+  </tr>
+    <tr ng-repeat="row in ctrl.userList">
+      <td ng-bind="row.name"></td>
+      <td ng-bind="row.email"></td>
+      <td ng-bind="row.phone"></td>
+      <td ng-bind="row.company"></td>
+      <td ng-bind="row.city"></td>
+      <td ng-bind="row.country"></td>
+    </tr>
+  </tbody>
+</table>

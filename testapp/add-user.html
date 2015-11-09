@@ -1,0 +1,32 @@
+<h4>New user info</h4>
+
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" ng-model="ctrl.user.name"/>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" ng-model="ctrl.user.email"/>
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" ng-model="ctrl.user.phone"/>
+  </div>
+  <div>
+    <label for="company">Company</label>
+    <input type="tel" id="company" ng-model="ctrl.user.company"/>
+  </div>
+  <div>
+    <label for="city">City</label>
+    <input type="tel" id="city" ng-model="ctrl.user.city"/>
+  </div>
+  <div>
+    <label for="country">Country</label>
+    <input type="tel" id="country" ng-model="ctrl.user.country"/>
+  </div>
+
+  <button ng-click="ctrl.updateData()"
+      class="btn blue darken-4">Save
+  </button>
+</form>
