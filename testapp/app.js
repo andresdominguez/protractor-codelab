@@ -116,14 +116,9 @@ app.controller('AddUserCtrl', function($location, userService) {
 
 app.directive('loadingBar', function() {
   return {
-    scope: {
-      visible: '='
-    },
     template: '' +
-    '<div ng-if="visible">' +
-    '  <div class="progress">' +
-    '    <div class="indeterminate blue darken-4"></div>' +
-    '  </div>' +
+    '<div class="progress">' +
+    '  <div class="indeterminate blue darken-4"></div>' +
     '</div>'
   };
 });
