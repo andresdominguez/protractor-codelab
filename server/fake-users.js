@@ -11,7 +11,7 @@ var _ = require('lodash');
  * }>}
  */
 var getUsers = function() {
-  return _.times(10).map(function() {
+  return _.times(3).map(function() {
     return {
       name: faker.name.findName(),
       email: faker.internet.email(),

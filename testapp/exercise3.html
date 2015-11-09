@@ -6,7 +6,13 @@
   <a class="btn blue darken-4" href="#/addUser">Add user</a>
 </div>
 
-<table>
+<div ng-if="!ctrl.userList.length">
+  <div class="progress">
+    <div class="indeterminate blue darken-4"></div>
+  </div>
+</div>
+
+<table ng-if="ctrl.userList.length">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,9 +22,6 @@
     </tr>
   </thead>
   <tbody>
-  <tr ng-if="!ctrl.userList.length" class="success">
-    <td colspan="6" class="text-center">Loading...</td>
-  </tr>
     <tr ng-repeat="row in ctrl.userList">
       <td ng-bind="row.name"></td>
       <td ng-bind="row.email"></td>
