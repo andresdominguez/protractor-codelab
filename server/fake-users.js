@@ -8,8 +8,7 @@ var _ = require('lodash');
  *   email: string,
  *   phone: string,
  *   company: string,
- *   city: string,
- *   country: string
+ *   city: string
  * }>}
  */
 var getUsers = function() {
@@ -19,8 +18,7 @@ var getUsers = function() {
       email: faker.internet.email(),
       phone: faker.phone.phoneNumber(),
       company: faker.company.companyName(),
-      city: faker.address.city(),
-      country: faker.address.county()
+      city: faker.address.city()
     }
   })
 };
