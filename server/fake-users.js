@@ -7,8 +7,7 @@ var _ = require('lodash');
  *   name: string,
  *   email: string,
  *   phone: string,
- *   company: string,
- *   city: string
+ *   company: string
  * }>}
  */
 var getUsers = function() {
@@ -17,8 +16,7 @@ var getUsers = function() {
       name: faker.name.findName(),
       email: faker.internet.email(),
       phone: faker.phone.phoneNumber(),
-      company: faker.company.companyName(),
-      city: faker.address.city()
+      company: faker.company.companyName()
     }
   })
 };
