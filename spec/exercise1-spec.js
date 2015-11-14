@@ -1,26 +1,42 @@
 describe('Exercise1', function() {
-  it('should navigate to exercise 1', function() {
-    // Use browser to navigate to http://localhost:9000/#/exercise1
 
-    // Hint: http://www.protractortest.org/#/api?view=Protractor.prototype.get
+  beforeEach(function() {
+    browser.get('http://localhost:9000/#/exercise1');
   });
 
   it('should find element by model', function() {
-    // Use element to find an element by model
+    // Use element to find an element by model. For example, find Bruce Lee's
+    // email address:
+    // <div>
+    //   <label for="email">Email</label>
+    //   <input type="text" id="email" ng-model="ctrl.user.email"/>
+    // </div>
 
     // Hint:
     // http://www.protractortest.org/#/api?view=ProtractorBy.prototype.model
   });
 
   it('should find element by binding', function() {
-    // Use element to find an element by binding
+    // Use element to find an element by binding. For example, find Bruce Lee's
+    // phone number:
+    // <div>
+    //   <strong>Phone:</strong>
+    //   <span>{{ctrl.displayUser.phone}}</span>
+    // </div>
 
-    // Hint:
+
+  // Hint:
     // http://www.protractortest.org/#/api?view=ProtractorBy.prototype.binding
   });
 
   it('should find element by css', function() {
-    // Use element to find an element by css
+    // Use element to find an element by css. For example, find the email under
+    // this tag:
+    //
+    // <div id="contact-email">
+    //    <strong>Email:</strong>
+    //    <span class="ng-binding">bruce.lee@google.com</span>
+    // </div>
   });
 
   it('should get element text', function() {
