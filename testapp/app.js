@@ -4,9 +4,7 @@ var app = angular.module('protractorTestApp', [
 ]);
 
 app.config(function($routeProvider) {
-  $routeProvider.when('/', {
-    templateUrl: 'main.html'
-  }).when('/exercise1', {
+  $routeProvider.when('/exercise1', {
     templateUrl: 'exercise1.html',
     controller: 'Exercise1Ctrl',
     controllerAs: 'ctrl'
@@ -23,7 +21,7 @@ app.config(function($routeProvider) {
     controller: 'AddUserCtrl',
     controllerAs: 'ctrl'
   }).otherwise({
-    redirectTo: '/'
+    redirectTo: '/exercise1'
   });
 });
 
