@@ -2,7 +2,7 @@
 
 Protractor codelab
 
-See the [Slides](https://docs.google.com/presentation/d/1yBp6C6cLPU0QRa5e2-0UMvii-RV4nRasSsR6boCwEr4/edit?usp=sharing)
+See the [slides](https://docs.google.com/presentation/d/1yBp6C6cLPU0QRa5e2-0UMvii-RV4nRasSsR6boCwEr4/edit?usp=sharing)
 
 ## Installation instructions
 
