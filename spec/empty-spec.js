@@ -1,5 +1,5 @@
 describe('Empty test', function() {
-  it('should compare two numbers', function() {
+  it('should contain bruce lee', function() {
     var nameList = [
         'Bruce Lee',
         'Jackie Chan'
