@@ -1,6 +1,10 @@
 var faker = require('faker');
 var _ = require('lodash');
 
+var getRandomInt = function(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+};
+
 /**
  * Generate a list of random users.
  * @return {Array<{
@@ -32,8 +36,8 @@ var getUsers = function() {
   // Add chuck norris at the beginning
   fakeUsers.unshift(chuckNorris);
 
-  // Add rambo in the middle (range 1-4)
-  var randomIndex = (new Date()).getTime() % 4 + 1;
+  // Add rambo in the middle
+  var randomIndex = getRandomInt(1, fakeUsers.length);
   // removes 0 elements from index 'randomIndex', and inserts item
   fakeUsers.splice(randomIndex, 0, rambo);
 
