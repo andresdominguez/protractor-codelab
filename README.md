@@ -30,3 +30,16 @@ terminal window and run the following command:
 ```shell
 $ npm run test
 ```
+
+## If you get an error
+
+You may get an error while installing protractor. Here is the workaround:
+
+```shell
+# Install protractor
+$ npm install protractor -g
+$ webdriver-manager update
+
+# Run the tests, run on protractor-codelab
+$ protractor
+```
